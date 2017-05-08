@@ -45,7 +45,7 @@ public class Answer {
         return (row >= 0) && (row < ROWS) && (col >= 0) && (col < COLS);
     }
 
-    private static int bfs(int maze[][], Point start, Point finish) {
+    private static int bfs(int[][] maze, Point start, Point finish) {
         boolean[][] visited = new boolean[COLS][ROWS];
         LinkedList<Node> q = new LinkedList<Node>();
         Node s = new Node(start, 1);
